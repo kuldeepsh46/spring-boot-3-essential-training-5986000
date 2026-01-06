@@ -1,5 +1,10 @@
 package learning.springboot.room_web_app.data.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+// @AllArgsConstructor
+// @NoArgsConstructor
 public enum positionEntity {
     HOUSEKEEPING, FRONT_DESK, SECURITY, CONCIERGE;
     public String toString() {

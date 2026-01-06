@@ -8,11 +8,15 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "EMPLOYEES")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class employeesEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -27,9 +31,6 @@ public class employeesEntity {
     private positionEntity position;
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
-        // return super.toString();
-        // return "EMPLOYEE_ID{roomId=" + employeeId + ", FIRST_NAME=" + fName + ", LAST_NAME=" + lName + ", POSITION=" + position + "}";
         return "Employees{employeeId: "+ employeeId +"First Name: "+ fName +"Last Name: "+ lName +"Position: "+ position +"}";
     }
 }

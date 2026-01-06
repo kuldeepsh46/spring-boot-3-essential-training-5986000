@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 import learning.springboot.room_web_app.data.repository.employeesRepository;
-import learning.springboot.room_web_app.data.repository.roomRepository;
+// import learning.springboot.room_web_app.data.repository.roomRepository;
 
 @SpringBootApplication
 public class RoomWebAppApplication {
@@ -25,15 +25,15 @@ public class RoomWebAppApplication {
 	public CommandLineRunner runs(employeesRepository ep) {
 		return args -> {
 			// System.out.println("Kuldeep Sharma");
-			ep.findAll().forEach(System.out::println);
+			// ep.findAll().forEach(System.out::println);
 		};
 	}
 	// @Bean
 	// public CommandLineRunner run() {
-	// 	return args -> {
-	// 		// System.out.println("Kuldeep Sharma");
-	// 		// rp.findAll().forEach(System.out::println);
-	// 		System.out.println("Kuldeep Sharma");
-	// 	};
+		// return args -> {
+		// 	// System.out.println("Kuldeep Sharma");
+		// 	// rp.findAll().forEach(System.out::println);
+		// 	System.out.println("Kuldeep Sharma");
+		// };
 	// }
 }

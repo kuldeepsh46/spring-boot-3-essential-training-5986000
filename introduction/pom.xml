@@ -11,6 +11,11 @@
 	<groupId>learning.springboot</groupId>
 	<artifactId>introduction</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>room-clr</module>
+		<module>room-clr</module>
+	</modules>
 	<name>introduction</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
